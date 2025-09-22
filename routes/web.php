@@ -24,6 +24,12 @@ Route::group(['prefix' => 'admin', 'as' => 'admin.', 'namespace' => 'Admin', 'mi
     // Users
     Route::delete('users/destroy', 'UsersController@massDestroy')->name('users.massDestroy');
     Route::resource('users', 'UsersController');
+
+    // Test
+    Route::delete('tests/destroy', 'TestController@massDestroy')->name('tests.massDestroy');
+    Route::post('tests/media', 'TestController@storeMedia')->name('tests.storeMedia');
+    Route::post('tests/ckmedia', 'TestController@storeCKEditorImages')->name('tests.storeCKEditorImages');
+    Route::resource('tests', 'TestController');
 });
 Route::group(['prefix' => 'profile', 'as' => 'profile.', 'namespace' => 'Auth', 'middleware' => ['auth']], function () {
     // Change password
