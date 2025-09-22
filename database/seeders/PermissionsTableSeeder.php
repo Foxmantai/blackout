@@ -76,6 +76,26 @@ class PermissionsTableSeeder extends Seeder
             ],
             [
                 'id'    => 17,
+                'title' => 'test_create',
+            ],
+            [
+                'id'    => 18,
+                'title' => 'test_edit',
+            ],
+            [
+                'id'    => 19,
+                'title' => 'test_show',
+            ],
+            [
+                'id'    => 20,
+                'title' => 'test_delete',
+            ],
+            [
+                'id'    => 21,
+                'title' => 'test_access',
+            ],
+            [
+                'id'    => 22,
                 'title' => 'profile_password_edit',
             ],
         ];
